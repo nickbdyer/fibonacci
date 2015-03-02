@@ -18,4 +18,9 @@ describe Fibonacci do
     expect(Fibonacci.get_value(10)).to eq 34
   end
 
+  it "can return the fifty first number in the fibonacci sequence" do
+    expect(Fibonacci.get_value(51)).to eq 12586269025
+  end
+
+  
 end
