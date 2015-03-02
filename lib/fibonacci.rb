@@ -7,4 +7,9 @@ class Fibonacci
     end
     return sequence[(at_position - 1)]
   end
+
+  def self.rec_get_value(n)
+    return n if n <= 1
+    self.rec_get_value(n - 1) + self.rec_get_value(n - 2)
+  end
 end
