@@ -2,7 +2,9 @@ class Fibonacci
 
   def self.get_value(at_position)
     sequence = [0, 1]
-    return 1 if at_position == 2
-    0
+    (at_position - 2).times do
+      sequence << (sequence.last + sequence[-2])
+    end
+    return sequence[(at_position - 1)]
   end
 end

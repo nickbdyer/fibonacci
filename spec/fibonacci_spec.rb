@@ -14,4 +14,8 @@ describe Fibonacci do
     expect(Fibonacci.get_value(3)).to eq 1
   end
 
+  it "can return the tenth number in the fibonacci sequence" do
+    expect(Fibonacci.get_value(10)).to eq 34
+  end
+
 end
